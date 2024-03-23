@@ -1,0 +1,71 @@
+
+@import '../../main.scss';
+
+:root {
+  --main-color: #9d34d9; 
+}
+.header {
+  background-color: #000000;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 1000;
+    padding-left: 2rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    li {
+      display: flex;
+      align-items: center; 
+      margin-right: 2rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .login-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 0;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: var(--main-color);
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .login-button:hover {
+      background-color: #ffffff;
+      color:  var(--main-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+
+    .nav-links {
+      margin-top: 1rem;
+
+      li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

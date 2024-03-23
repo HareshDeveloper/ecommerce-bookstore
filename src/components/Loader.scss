@@ -1,0 +1,23 @@
+.loader-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .loader-content {
+      text-align: center;
+    }
+  
+    .loader-animation {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 2px;
+    }
+    p{
+        font-family: Montserrat-SemiBold;
+        font-size: xx-large;
+        margin-top: 0;
+    }
+  }
+  
