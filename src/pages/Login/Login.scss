@@ -45,8 +45,23 @@ body {
 }
 
 .image {
-  background-color: brown;
+  width: 100%; 
+  height: auto; 
+  max-width: 100%; 
+  background-color: black;
+ right: 0;
+ position: relative; 
 }
+
+.image img {
+  position: absolute;
+  bottom: 0; 
+  right: 1rem;
+  width: 72%; 
+  height: auto; 
+  object-fit: contain;
+}
+
 
 @keyframes slideInFromLeft {
   0% {

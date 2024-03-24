@@ -5,6 +5,7 @@ import "../../main.scss";
 import "./Login.scss";
 import animationData from '../../assets/lottie-animations/login-book-animation.json';
 import Loader from "../../components/Loader";
+import loginBackground from "../../assets/images/login-background.webp";
 
 const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,7 +52,7 @@ const LoginPage = () => {
         </div>
         
         <div className="image">
-          <blockquote></blockquote>
+        <img src={loginBackground} />
         </div>
       </div>
       )}
